@@ -65,4 +65,6 @@ Portfólio organizado por áreas de interesse e conteúdos estudados do 1º ao 4
 
 As versões públicas dos exercícios antigos foram redesenhadas e refatoradas com assistência de IA a partir dos temas das atividades acadêmicas individuais. Enunciados, logotipos, imagens e trechos de modelos de terceiros foram removidos. Os protótipos novos também foram criados com assistência de IA e estão identificados como demonstrativos. Dados, organizações, métricas e solicitações são fictícios. Não há fontes, APIs ou serviços externos obrigatórios.
 
+Nem todos os materiais indicam o semestre exato de cada exercício; por isso, o portfólio está organizado por área e não atribui semestres individuais sem evidência.
+
 Abra `index.html` em um navegador para explorar e filtrar os projetos. Cada repositório contém suas próprias instruções.
