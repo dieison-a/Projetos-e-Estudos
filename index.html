@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Gestão da Tecnologia da Informação de Dieison Alessi, organizado por áreas e conteúdos de estudo.">
+  <meta name="theme-color" content="#f5f4ef">
+  <title>Dieison Alessi — Portfólio em GTI</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="barra-superior">
+    <a class="marca" href="#inicio" aria-label="Dieison Alessi, início">
+      <span class="marca-simbolo">DA</span>
+      <span><strong>Dieison Alessi</strong><small>GESTÃO DA TECNOLOGIA DA INFORMAÇÃO</small></span>
+    </a>
+    <a class="link-github" href="https://github.com/dieison-a" target="_blank" rel="noopener noreferrer">Perfil no GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="inicio">
+    <section class="apresentacao">
+      <div class="apresentacao-texto">
+        <p class="sobretitulo"><span></span> PORTFÓLIO · ESTUDOS · EXPERIMENTOS</p>
+        <h1>Tecnologia que<br><em>resolve o que importa.</em></h1>
+        <p class="resumo">Uma coleção de projetos simples e demonstrativos que conecta desenvolvimento, produto, processos, dados e infraestrutura — do 1º ao 4º semestre de GTI.</p>
+        <div class="selos"><span>28 projetos</span><span>6 áreas</span><span>Português brasileiro</span></div>
+      </div>
+      <aside class="nota-transparencia">
+        <span class="nota-icone" aria-hidden="true">i</span>
+        <div><strong>Sobre este portfólio</strong><p>Versões públicas dos exercícios e novos protótipos foram redesenhados com assistência de IA. Cenários e dados são fictícios; nada aqui representa resultados de empregadores ou clientes.</p></div>
+      </aside>
+    </section>
+
+    <section class="selecao" aria-labelledby="titulo-projetos">
+      <div class="cabecalho-selecao">
+        <div><p class="sobretitulo">EXPLORAR POR ÁREA</p><h2 id="titulo-projetos">Projetos e estudos</h2></div>
+        <label class="busca"><span aria-hidden="true">⌕</span><input id="busca-projetos" type="search" placeholder="Buscar projeto ou conteúdo" aria-label="Buscar projeto ou conteúdo"></label>
+      </div>
+      <div id="filtros-areas" class="filtros-areas" role="group" aria-label="Filtrar projetos por área"></div>
+      <p id="contagem-resultados" class="contagem" aria-live="polite"></p>
+      <div id="lista-projetos" class="grade-projetos"></div>
+      <p id="estado-vazio" class="estado-vazio" hidden>Nenhum projeto encontrado. Experimente outro termo.</p>
+    </section>
+  </main>
+
+  <footer class="rodape"><span>PORTFÓLIO DE GTI</span><span>Aprender · experimentar · melhorar</span></footer>
+</body>
+</html>
