@@ -1,6 +1,8 @@
 # Portfólio em Gestão da Tecnologia da Informação
 
-Portfólio organizado por áreas de interesse e conteúdos estudados do 1º ao 4º semestre. Reúne exercícios acadêmicos revisados e protótipos demonstrativos em Java, JavaScript, PHP, SQL, HTML e CSS; não representa projetos de empregadores nem resultados de clientes.
+Portfólio organizado por áreas de interesse e conteúdos estudados do 1º ao 4º semestre. Reúne versões públicas de exercícios individuais redesenhadas com assistência de IA e protótipos demonstrativos em Java, JavaScript, PHP, SQL, HTML e CSS; não representa projetos de empregadores nem resultados de clientes.
+
+[Explorar o portfólio interativo](https://dieison-a.github.io/Projetos-e-Estudos/)
 
 ## Áreas
 
