@@ -1,43 +1,70 @@
-const projetos = [
-  { titulo: "Desafios de repetição", repositorio: "desafios-de-repeticao", area: "Desenvolvimento e lógica", origem: "Exercício redesenhado com IA", resumo: "Laços, contagem crescente e decrescente, pares, ímpares e múltiplos." },
-  { titulo: "Aritmética com funções", repositorio: "aritmetica-com-funcoes", area: "Desenvolvimento e lógica", origem: "Exercício redesenhado com IA", resumo: "Composição de funções para soma, multiplicação, potência e fatorial." },
-  { titulo: "Sequências numéricas", repositorio: "sequencias-numericas", area: "Desenvolvimento e lógica", origem: "Exercício redesenhado com IA", resumo: "Geração interativa de sequências com regras de divisibilidade." },
-  { titulo: "Números e regras", repositorio: "numeros-e-regras", area: "Desenvolvimento e lógica", origem: "Exercício redesenhado com IA", resumo: "Classificação de números por paridade, divisores e padrões." },
-  { titulo: "Matriz de multiplicação", repositorio: "matriz-de-multiplicacao", area: "Desenvolvimento e lógica", origem: "Exercício redesenhado com IA", resumo: "Construção de uma matriz numérica e exploração de seus resultados." },
-  { titulo: "Desafios com vetores", repositorio: "desafios-com-vetores", area: "Desenvolvimento e lógica", origem: "Exercício redesenhado com IA", resumo: "Percursos e operações com listas numéricas." },
-  { titulo: "Desafios de lógica", repositorio: "desafios-de-logica", area: "Desenvolvimento e lógica", origem: "Exercício redesenhado com IA", resumo: "Cálculos demonstrativos de remuneração, estoque, saque e idade." },
-  { titulo: "Exercícios de vetores e textos", repositorio: "exercicios-de-vetores-e-textos", area: "Desenvolvimento e lógica", origem: "Exercício redesenhado com IA", resumo: "Transformações numéricas e operações com palavras." },
-  { titulo: "Mercado em Java", repositorio: "mercado-em-java", area: "Aplicações e dados", origem: "Protótipo com IA", resumo: "Aplicação de terminal com orientação a objetos, estoque e carrinho em memória." },
-  { titulo: "Loja demonstrativa com PHP e SQL", repositorio: "loja-demonstrativa-php-sql", area: "Aplicações e dados", origem: "Protótipo com IA", resumo: "Formulários e carrinho local em PHP, com esquema relacional sem dados pessoais." },
-  { titulo: "Descoberta de produto", repositorio: "descoberta-de-produto", area: "Produto e processos", origem: "Protótipo com IA", resumo: "Estudo fictício de evidências, requisitos, priorização e aprendizado." },
-  { titulo: "Melhoria de processos", repositorio: "melhoria-de-processos", area: "Produto e processos", origem: "Protótipo com IA", resumo: "Comparação visual entre um fluxo atual e uma proposta de melhoria." },
-  { titulo: "Navegação com DOM", repositorio: "navegacao-com-dom", area: "Produto e processos", origem: "Exercício redesenhado com IA", resumo: "Criação de elementos e interações básicas diretamente no navegador." },
-  { titulo: "Indicadores de experiência", repositorio: "indicadores-de-experiencia", area: "Dados e experiência", origem: "Protótipo com IA", resumo: "Indicadores e coortes ilustrativas, calculados sobre dados sintéticos." },
-  { titulo: "Painel de operações logísticas", repositorio: "painel-de-logistica", area: "Dados e experiência", origem: "Protótipo com IA", resumo: "Busca e filtros em uma lista fictícia de pedidos e situações." },
-  { titulo: "Lista de compras", repositorio: "lista-de-compras", area: "Dados e experiência", origem: "Exercício redesenhado com IA", resumo: "Exibição e totalização de itens de uma lista demonstrativa." },
-  { titulo: "Catálogo de produtos", repositorio: "catalogo-de-produtos", area: "Dados e experiência", origem: "Exercício redesenhado com IA", resumo: "Organização de produtos fictícios por categoria." },
-  { titulo: "Catálogo de mercado", repositorio: "catalogo-de-mercado", area: "Dados e experiência", origem: "Exercício redesenhado com IA", resumo: "Visualização de produtos agrupados para uma mercearia fictícia." },
-  { titulo: "Laboratório de redes", repositorio: "laboratorio-de-redes", area: "Infraestrutura e conhecimento", origem: "Protótipo com IA", resumo: "Topologia e indicadores totalmente simulados, sem acesso a redes reais." },
-  { titulo: "Catálogo de conhecimento", repositorio: "catalogo-de-conhecimento", area: "Infraestrutura e conhecimento", origem: "Protótipo com IA", resumo: "Busca e classificação local de conteúdos fictícios para equipes digitais." },
-  { titulo: "Planejamento de campanhas", repositorio: "planejamento-de-campanhas", area: "Negócios, web e impacto", origem: "Protótipo com IA", resumo: "Simulador de campanha com hipóteses explícitas e números ilustrativos." },
-  { titulo: "Plataforma comunitária", repositorio: "plataforma-comunitaria", area: "Negócios, web e impacto", origem: "Protótipo com IA", resumo: "Organização local de solicitações demonstrativas, sem dados pessoais." },
-  { titulo: "Loja interativa", repositorio: "loja-interativa", area: "Negócios, web e impacto", origem: "Exercício redesenhado com IA", resumo: "Catálogo fictício com filtros e carrinho de demonstração." },
-  { titulo: "Vitrine digital", repositorio: "vitrine-digital", area: "Negócios, web e impacto", origem: "Exercício redesenhado com IA", resumo: "Página responsiva de uma loja demonstrativa com conteúdo original." },
-  { titulo: "Primeira página web", repositorio: "primeira-pagina-web", area: "Negócios, web e impacto", origem: "Exercício redesenhado com IA", resumo: "Fundamentos de HTML semântico e estrutura de navegação." },
-  { titulo: "Seletor de perfis", repositorio: "seletor-de-perfis", area: "Negócios, web e impacto", origem: "Exercício redesenhado com IA", resumo: "Interface responsiva com nomes e perfis inteiramente fictícios." },
-  { titulo: "Cartão de apresentação", repositorio: "cartao-de-apresentacao", area: "Negócios, web e impacto", origem: "Exercício redesenhado com IA", resumo: "Composição visual de uma página de apresentação sem imagens externas." },
-  { titulo: "Página de apresentação", repositorio: "pagina-de-apresentacao", area: "Negócios, web e impacto", origem: "Exercício redesenhado com IA", resumo: "Exercício de estrutura semântica, tipografia e organização de conteúdo." }
-];
+const areas = {
+  "Desenvolvimento e lógica": [
+    "aritmetica-com-funcoes", "desafios-com-vetores", "desafios-de-logica",
+    "desafios-de-repeticao", "exercicios-de-vetores-e-textos",
+    "matriz-de-multiplicacao", "numeros-e-regras", "sequencias-numericas"
+  ],
+  "Aplicações e dados": [
+    "loja-demonstrativa-php-sql", "mercado-em-java"
+  ],
+  "Desenvolvimento Web": [
+    "atendimento-de-clinica-com-mysql", "cadastro-de-alunos", "cadastro-de-alunos-com-mysql",
+    "cadastro-de-carros-php", "cadastro-de-cursos-php", "cadastro-de-itens-de-informatica-php",
+    "cadastro-de-livros-php", "cadastro-de-pessoas-e-idades", "cadastro-de-produtos-com-mysql",
+    "cadastro-de-projetos-com-mysql", "calculadora-de-media", "calculo-de-comissao-de-vendas",
+    "calculo-de-compra-com-desconto", "calculo-de-compra-no-supermercado",
+    "calculo-de-desconto-na-farmacia", "calculo-de-gasto-com-combustivel",
+    "calculo-de-imc-com-funcoes", "calculo-de-medicamentos-na-farmacia",
+    "calculo-de-pagamento-de-compra", "calculo-de-venda", "carrinho-de-compras-php",
+    "classe-item-php", "conta-bancaria-em-php", "controle-de-estoque-com-mysql",
+    "conversao-de-temperatura", "conversor-de-dolares-para-reais",
+    "conversor-entre-celsius-e-fahrenheit", "conversor-fahrenheit-para-celsius",
+    "farmacia-bem-estar-em-php", "farmacia-popular", "lista-de-produtos-com-filtros",
+    "maior-media-da-turma", "media-da-primeira-avaliacao", "media-da-turma",
+    "media-de-idades", "media-de-notas-com-funcoes", "media-do-aluno",
+    "media-do-aluno-com-funcoes", "notas-de-alunos", "ordenacao-de-notas-de-alunos",
+    "ordenacao-de-pessoas-por-nome", "pesquisa-de-aluno", "validacao-de-idade-para-voto",
+    "venda-com-comissao-e-frete", "verificacao-de-idade-com-voto"
+  ],
+  "Dados e experiência": [
+    "catalogo-de-mercado", "catalogo-de-produtos", "indicadores-de-experiencia",
+    "lista-de-compras", "painel-de-logistica"
+  ],
+  "Infraestrutura e conhecimento": [
+    "catalogo-de-conhecimento", "laboratorio-de-redes"
+  ],
+  "Negócios, web e impacto": [
+    "cartao-de-apresentacao", "loja-interativa", "pagina-de-apresentacao",
+    "planejamento-de-campanhas", "plataforma-comunitaria", "primeira-pagina-web",
+    "seletor-de-perfis", "vitrine-digital"
+  ],
+  "Produto e processos": [
+    "descoberta-de-produto", "melhoria-de-processos", "navegacao-com-dom"
+  ]
+};
 
-const nomesAreas = ["Todas as áreas", ...new Set(projetos.map((projeto) => projeto.area))];
+const nomesAreas = ["Todas as áreas", ...Object.keys(areas)];
 const areaFiltros = document.querySelector("#filtros-areas");
 const campoBusca = document.querySelector("#busca-projetos");
 const listaProjetos = document.querySelector("#lista-projetos");
 const estadoVazio = document.querySelector("#estado-vazio");
 const contagem = document.querySelector("#contagem-resultados");
+const selos = document.querySelector(".selos");
 let areaSelecionada = "Todas as áreas";
+let projetos = [];
+
+function formatarNome(nome) {
+  const titulo = nome
+    .replace(/php/g, "PHP")
+    .replace(/mysql/g, "MySQL")
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (letra) => letra.toLocaleUpperCase("pt-BR"))
+    .trim();
+  return titulo;
+}
 
 function criarFiltros() {
+  areaFiltros.replaceChildren();
   for (const nomeArea of nomesAreas) {
     const botao = document.createElement("button");
     botao.type = "button";
@@ -55,11 +82,23 @@ function criarFiltros() {
   }
 }
 
+function criarLink(texto, endereco, classe) {
+  const link = document.createElement("a");
+  link.className = classe;
+  link.href = endereco;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = texto;
+  return link;
+}
+
 function renderizarProjetos() {
   const consulta = campoBusca.value.trim().toLocaleLowerCase("pt-BR");
   const encontrados = projetos.filter((projeto) => {
     const correspondeArea = areaSelecionada === "Todas as áreas" || projeto.area === areaSelecionada;
-    const textoBusca = `${projeto.titulo} ${projeto.area} ${projeto.resumo} ${projeto.origem}`.toLocaleLowerCase("pt-BR");
+    const textoBusca = [
+      projeto.nome, projeto.area, projeto.descricao, projeto.repositorio
+    ].join(" ").toLocaleLowerCase("pt-BR");
     return correspondeArea && textoBusca.includes(consulta);
   });
 
@@ -67,6 +106,7 @@ function renderizarProjetos() {
   for (const projeto of encontrados) {
     const cartao = document.createElement("article");
     cartao.className = "cartao-projeto";
+
     const topo = document.createElement("div");
     topo.className = "cartao-topo";
     const seloArea = document.createElement("span");
@@ -75,23 +115,24 @@ function renderizarProjetos() {
     seloArea.textContent = projeto.area;
     const seloOrigem = document.createElement("span");
     seloOrigem.className = "selo-origem";
-    seloOrigem.textContent = projeto.origem;
+    seloOrigem.textContent = projeto.temPagina ? "Disponível online" : "Código no GitHub";
     topo.append(seloArea, seloOrigem);
 
     const titulo = document.createElement("h3");
-    titulo.textContent = projeto.titulo;
+    titulo.textContent = projeto.nome;
     const resumo = document.createElement("p");
-    resumo.textContent = projeto.resumo;
+    resumo.textContent = projeto.descricao;
+
     const rodape = document.createElement("div");
     rodape.className = "cartao-rodape";
-    const instrucao = document.createElement("small");
-    instrucao.textContent = "Abrir repositório";
-    const link = document.createElement("a");
-    link.href = `https://github.com/dieison-a/${projeto.repositorio}`;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.textContent = "Ver projeto ↗";
-    rodape.append(instrucao, link);
+    const acoes = document.createElement("div");
+    acoes.className = "acoes-projeto";
+    if (projeto.temPagina) {
+      acoes.append(criarLink("Abrir página ↗", projeto.temPagina, "link-pagina"));
+    }
+    acoes.append(criarLink("Ver código", projeto.url, "link-codigo"));
+    rodape.append(acoes);
+
     cartao.append(topo, titulo, resumo, rodape);
     listaProjetos.append(cartao);
   }
@@ -102,6 +143,64 @@ function renderizarProjetos() {
   estadoVazio.hidden = encontrados.length > 0;
 }
 
+async function carregarPortfólio() {
+  try {
+    const resposta = await fetch(
+      "https://api.github.com/users/dieison-a/repos?per_page=100&type=owner",
+      { headers: { Accept: "application/vnd.github+json" } }
+    );
+    if (!resposta.ok) throw new Error("Falha ao consultar o GitHub.");
+
+    const repositorios = await resposta.json();
+    const porNome = new Map(repositorios.map((repositorio) => [repositorio.name, repositorio]));
+    projetos = [];
+
+    for (const [area, nomes] of Object.entries(areas)) {
+      for (const nomeRepositorio of nomes) {
+        const repositorio = porNome.get(nomeRepositorio);
+        if (!repositorio || repositorio.private) continue;
+        projetos.push({
+          nome: formatarNome(repositorio.name),
+          repositorio: repositorio.name,
+          area,
+          descricao: repositorio.description || "Projeto acadêmico publicado no GitHub.",
+          url: repositorio.html_url,
+          temPagina: repositorio.has_pages && repositorio.homepage
+            ? repositorio.homepage
+            : null
+        });
+      }
+    }
+
+    const paginaAula = porNome.get("Aula-GithubPages");
+    if (paginaAula && !paginaAula.private) {
+      projetos.push({
+        nome: "Aula GitHub Pages",
+        repositorio: "Aula-GithubPages",
+        area: "Desenvolvimento e lógica",
+        descricao: "Exercício de publicação de uma página estática com HTML e CSS.",
+        url: paginaAula.html_url,
+        temPagina: paginaAula.has_pages ? "https://dieison-a.github.io/Aula-GithubPages/" : null
+      });
+    }
+
+    projetos.sort((a, b) => a.area.localeCompare(b.area, "pt-BR")
+      || a.nome.localeCompare(b.nome, "pt-BR"));
+
+    const totalAreas = new Set(projetos.map((projeto) => projeto.area)).size;
+    selos.replaceChildren();
+    for (const texto of [`${projetos.length} projetos`, `${totalAreas} áreas`, "Português brasileiro"]) {
+      const selo = document.createElement("span");
+      selo.textContent = texto;
+      selos.append(selo);
+    }
+  } catch (_erro) {
+    contagem.textContent = "Não foi possível carregar os projetos pelo GitHub.";
+  }
+
+  criarFiltros();
+  renderizarProjetos();
+}
+
 campoBusca.addEventListener("input", renderizarProjetos);
-criarFiltros();
-renderizarProjetos();
+carregarPortfólio();

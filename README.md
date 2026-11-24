@@ -1,8 +1,14 @@
 # Portfólio em Gestão da Tecnologia da Informação
 
-Portfólio organizado por áreas de interesse e conteúdos estudados do 1º ao 4º semestre. Reúne versões públicas de exercícios individuais redesenhadas com assistência de IA e protótipos demonstrativos em Java, JavaScript, PHP, SQL, HTML e CSS; não representa projetos de empregadores nem resultados de clientes.
+Portfólio organizado por áreas de interesse e conteúdos estudados ao longo da graduação. Reúne versões públicas de exercícios individuais redesenhadas com assistência de IA e protótipos demonstrativos em Java, JavaScript, PHP, SQL, HTML e CSS; não representa projetos de empregadores nem resultados de clientes.
 
 [Explorar o portfólio interativo](https://dieison-a.github.io/Projetos-e-Estudos/)
+
+## Página inicial do portfólio
+
+A página inicial consulta os repositórios públicos da conta e apresenta todos eles organizados pelas áreas da pasta `Projetos de Portfólio`. Os projetos com GitHub Pages mostram o botão **Abrir página**, que abre a demonstração diretamente no navegador.
+
+Projetos PHP com banco de dados e projetos Java não podem ser hospedados diretamente pelo GitHub Pages, pois dependem de servidor ou compilação. A página inicial oferece o link **Ver código** para esses projetos no repositório.
 
 ## Áreas
 
